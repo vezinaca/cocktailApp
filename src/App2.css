@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+
+
+*{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 13px;
+    
+}
+
+header {
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(8, 8, 41);
+    color: white;
+    padding:  30px 50px;
+    
+    
+}
+
+
+.nav-links {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: white;
+        
+}
+
+.nav-links li{
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li:hover {
+    color: #0088a9;
+}
+
+.logo {
+    /* margin-left: auto;
+    order: 3; */
+
+    
+    
+}
+
+.contact {
+    /* order: 1; */
+    /* margin-left: auto; */
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    color: #054f5e;
+} 
+
+.App {
+    color: black;
+}
+
+p {
+    font-size: 1rem;;
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 5px;
+}
+
+.card--image{
+    border-radius: 10px;
+}
