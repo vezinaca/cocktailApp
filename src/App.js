@@ -7,13 +7,16 @@ import Shop from "./components/Shop";
 import Contact from "./components/Contact";
 import DrinkCard from "./components/DrinkCard";
 import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {DrinkProvider} from "./components/DrinkContext";
 
 
 
 function App() {
   return (
     <Router>
+        <DrinkProvider>
         <div className="App">
+        
             <Header />
             <div className="container">
                 <Switch>
@@ -25,6 +28,7 @@ function App() {
                </Switch>
             </div>
        </div>
+       </DrinkProvider>
     </Router>
   );
 }
