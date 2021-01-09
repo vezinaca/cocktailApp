@@ -9,7 +9,9 @@ export default function Shop(){
 
     
     const allDrinks = drinks.map(drink => (
-        <Link to={`/shop/${drink.idDrink}`}><DrinkCard key={drink.idDrink} drink={drink} /></Link>
+        // <Link to={`/shop/${drink.idDrink}`}><DrinkCard key={drink.idDrink} drink={drink} /></Link>
+        // <Link to={`/shop/${drink.idDrink}`}><DrinkCard /></Link>
+        <Link to={`/shop/${drink.idDrink}`}>{drink.strDrink}</Link>
     ));
 
     return (

@@ -6,6 +6,7 @@ import About from "./components/About";
 import Shop from "./components/Shop";
 import Contact from "./components/Contact";
 import DrinkCard from "./components/DrinkCard";
+import Cart from "./components/Cart";
 import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {DrinkProvider} from "./components/DrinkContext";
 
@@ -25,6 +26,7 @@ function App() {
                     <Route path="/contact" component={Contact}></Route>
                     <Route path="/about" component={About}></Route>
                     <Route path="/shop/:id" component={DrinkCard}/>
+                    <Route path="/cart" component={Cart} />
                </Switch>
             </div>
        </div>
